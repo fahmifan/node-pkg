@@ -1,0 +1,28 @@
+{
+  "name": "node-pkg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "NODE_ENV=development pkg -t latest-linux-x64 -o ./app.dev ./index.js",
+    "build-prod": "NODE_ENV=production pkg -t latest-linux-x64 -o ./app ./.index.js",
+    "start": "node .",
+    "sequelize": "sequelize"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "pkg": "^4.3.7",
+    "sequelize-cli": "^5.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "co": "^4.6.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "sequelize": "^5.6.1"
+  }
+}
