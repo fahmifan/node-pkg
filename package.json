@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-dev": "NODE_ENV=development pkg -t latest-linux-x64 -o ./app.dev ./index.js",
-    "build-prod": "NODE_ENV=production pkg -t latest-linux-x64 -o ./app ./.index.js",
+    "build-dev": "NODE_ENV=development pkg -t latest-linux-x64 -o ./build/app.dev ./index.js",
+    "build-prod": "NODE_ENV=production pkg -t latest-linux-x64 -o ./build/app ./.index.js",
     "start": "node .",
     "sequelize": "sequelize"
   },
@@ -21,6 +21,7 @@
     "co": "^4.6.0",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "sequelize": "^5.6.1"
+    "sequelize": "^5.6.1",
+    "sqlite3": "^4.0.6"
   }
 }
